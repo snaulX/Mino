@@ -6,7 +6,7 @@
 	<annotation_start>@</annotation_start>
 	<annotation_end></annotation_end>
 	<class_keyword>class</class_keyword>
-	<var_keyword>var</var_keyword>
+	<variable_keyword>var</variable_keyword>
 	<const_keyword>const</const_keyword>
 	<public_keyword>public</public_keyword>
 	<private_keyword>private</private_keyword>
@@ -47,15 +47,21 @@
 	<single_comment>//</single_comment>
 	<multiline_comment_start>/*</multiline_comment_start>
 	<multiline_comment_end>*/</multiline_comment_end>
+	<expression_end>;</expression_end>
+	<operator_keyword>operator</operator_keyword>
+	<collection_keyword>collection</collection_keyword>
+	<annotation_keyword>annotation</annotation_keyword>
+	<float_separator>.</float_separator>
+	<expression_separator>,</expression_separator>
+	<implements_keyword>:</implements_keyword>
+	<extends_keyword>:</extends_keyword>
 	<!--
 	<add>
 		#if DOTNET 
 			use System;
-			//funcalias print = Console.WriteLine;
 		#if JVM
 			use java.lang;
 			//typealias string = java.lang.String;
-			//funcalias print = System.out.println;
 		#endif
 	</add>
 	-->

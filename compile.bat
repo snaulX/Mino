@@ -1,2 +1,2 @@
 @echo off
-wolc program.wol
+Mino program.wol
