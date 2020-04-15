@@ -1,0 +1,5 @@
+import dotnet;
+
+var string a = "Hello Mino!";
+
+Console.WriteLine(a);
