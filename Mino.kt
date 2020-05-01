@@ -6,6 +6,6 @@ fun main(args: Array<String>) {
     if (index > 0) {
         outputName = args[++index]
     }
-    system("java -jar Tangara.jar $args[0].mino " + (if (outputName.isNotEmpty()) "-o $outputName " else ""))
-    system("TokensBuilder $args[0].tokens " + (if (outputName.isNotEmpty()) "-o $outputName " else ""))
+    system("java -jar Tangara.jar $args[0].mino")
+    system("TokensBuilder.exe $args[0].tokens")
 }

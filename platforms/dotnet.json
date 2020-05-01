@@ -10,5 +10,7 @@
     "implements_keyword": ":",
     "new_operator": "new",
     "readonly_keyword": "readonly",
-    "constructor_keyword": "constructor"
+    "constructor_keyword": "constructor",
+    "statement_start": "(",
+    "statement_end": ")"
 }

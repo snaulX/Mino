@@ -1,0 +1,10 @@
+import dotnet; //import platform
+using System; //use namespace System
+using TokensBuilder; //use namespace of compiler for test
+namespace com.snaulX.Mino; //create namespace but it don`t will working becouse main class cannot have namespace
+Console.WriteLine("Hello Mino!"); //priniting value
+Console.WriteLine("Press any key to close program"); //i dont know but i must write anything here
+Console.ReadKey(); //readkey
+Math.Cos(34); //compiler can work with numbers
+// Context.CreateAssembly(true); //call some static method of compiler but it don`t will work (will generate exception you can test that)
+class MyClass; //create empty public class with name com.snaulX.Mino.MyClass

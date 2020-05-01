@@ -1,0 +1,10 @@
+{
+    "import_keyword": "импортировать_платформу",
+    "separator": "вызвать_метод",
+    "use_keyword": "использовать_пространство_имён",
+    "package_keyword": "объявить_пространство_имён",
+    "expression_end": "конец_выражения",
+    "class_keyword": "объявить_класс",
+    "single_comment_start": "комментарий",
+    "include_keyword": "подключить_библиотеку"
+}

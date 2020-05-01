@@ -37,5 +37,6 @@
     "new_operator": "new",
     "struct_keyword": "struct",
     "separator": ".",
-    "else_if_keyword": ""
+    "else_if_keyword": "",
+    "expression_end": ";"
 }

@@ -1,5 +1,13 @@
-import dotnet;
-
-var string a = "Hello Mino!";
-
-Console.WriteLine(a);
+import dotnet; //import platform
+using System; //use namespace System
+using TokensBuilder; //use namespace from compiler for test
+using TokensStandart; //use namespace for standart functions for Mino
+namespace com.snaulX.Mino; //create namespace but it don`t will working becouse main class cannot have namespace
+// var string a = "Mino";
+Console.WriteLine("Start Program")
+StandartFunctions.sleep(500);
+Console.WriteLine("Hello Mino!");
+Console.WriteLine("Press any key to close program");
+Console.ReadKey(false);
+// Context.CreateAssembly(true);
+class MyClass;

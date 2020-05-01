@@ -1,0 +1,6 @@
+include mylib.dll; //add library with path mylib.dll
+use MyNameSpace; //using namespace from mylib.dll
+use System; //using namespace for Console
+Emitter.AskName(); //use methods from mylib.dll
+Emitter.PrintSqrt(81); //compiler can work with integer
+Console.ReadKey(); //wait while user press any key
