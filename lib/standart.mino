@@ -1,0 +1,48 @@
+/**
+* Library - standart.
+* Have all standart types and methods and fields for base work.
+* Author - snaulX
+*/
+
+// Types
+typealias void = void;
+typealias bool = Boolean;
+expect typealias byte;
+expect typealias short;
+expect typealias int;
+expect typealias float;
+expect typealias long;
+expect typealias double;
+typealias char = Char;
+typealias string = String;
+
+// Functions
+expect funcalias print;
+expect funcalias println;
+expect funcalias sleep;
+expect fun readln(); //JVM haven`t static method for read from console
+expect fun readkey();
+
+// Realization
+#if DOTNET
+  use System;
+  actual typealias byte = Byte;
+  actual typealias short = Int16;
+  actual typealias int = Int32;
+  actual typealias float = Single;
+  actual typealias long = Int64;
+  actual typealias double = Double;
+  actual funcalias print = Console.Write;
+  actual funcalias println = Console.WriteLine;
+  actual funcalias sleep = System.Threading.Thread.Sleep;
+  actual funcalias readln = Console.ReadLine;
+  actual funcalias readkey = Console.ReadKey(); //alias only one of overload methods in Console.ReadKey
+#elif JVM
+  use java.lang;
+  actual funcalias print = System.out.print;
+  actual funcalias println = System.out.println;
+  actual fun readln() -> new java.io.Scanner(System.in).nextLine();
+#elif LLVM
+  include Mino.dll;
+  use Mino.Std;
+#endif
