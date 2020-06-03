@@ -1,0 +1,16 @@
+lib standart;
+
+// Common code:
+use TokensStandart.Collections;
+typealias ICollection; //compiler automatically find other type with this name and copy to new type
+expect
+
+#if DOTNET
+  use System.Collections;
+  use System.Collections.Generic;
+#elif JVM
+
+#elif LLVM
+  include Mino.dll;
+  use Mino.Collections;
+#endif
