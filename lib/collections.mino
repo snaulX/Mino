@@ -2,14 +2,21 @@ lib standart;
 
 // Common code:
 use TokensStandart.Collections;
-typealias ICollection; //compiler automatically find other type with this name and copy to new type
-expect
+expect typealias Collection; //compiler automatically find other type with this name and copy to new type
+expect typealias IList {
+    expect funcalias add;
+}
+expect typealias List;
 
 #if DOTNET
   use System.Collections;
   use System.Collections.Generic;
+  actual typealias IList;
+  actual typealias List;
 #elif JVM
-
+  use java.util;
+  actual typealias IList = java.util.List;
+  actual typealias List = ArrayList;
 #elif LLVM
   include Mino.dll;
   use Mino.Collections;

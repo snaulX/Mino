@@ -6,7 +6,10 @@ namespace com.snaulX.Mino; //create namespace but it don`t will working becouse 
 // var string a = "Mino";
 Console.WriteLine("Start Program");
 Console.WriteLine("Hello Mino!");
-Console.WriteLine(Math.Cos(Math.Pow(3)));
+Console.Write("Write number for search cosinus: ");
+Console.WriteLine(Math.Cos(Convert.ToInt32(Console.ReadLine())));
+System.Threading.Thread.Sleep(1000);
+Console.WriteLine(100);
 Console.WriteLine("Press any key to close program");
 Console.ReadKey(false);
 // Context.CreateAssembly(true);

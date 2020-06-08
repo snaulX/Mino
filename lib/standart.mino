@@ -36,7 +36,7 @@ expect fun double random();
   actual fun int readInt() => Int32.Parse(Console.ReadLine());
 #elif JVM
   use java.lang;
-  use java.io;
+  use java.util;
   private final var Scanner sc = new Scanner(System.in);
   actual funcalias print = System.out.print;
   actual funcalias println = System.out.println;
