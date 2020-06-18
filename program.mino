@@ -9,7 +9,10 @@ Console.WriteLine("Hello Mino!");
 Console.Write("Write number for search cosinus: ");
 Console.WriteLine(Math.Cos(Convert.ToInt32(Console.ReadLine())));
 System.Threading.Thread.Sleep(1000);
-Console.WriteLine(500+600);
+Console.WriteLine(500-200);
+while (Console.ReadLine() != "hello") {
+    Console.WriteLine("WRONG WORD");
+} //while loops is working
 Console.WriteLine("Press any key to close program");
 Console.ReadKey(false);
 // Context.CreateAssembly(true);
