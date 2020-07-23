@@ -6,11 +6,50 @@
 Main feature of this programming language is **You can change syntax**. The syntax can be changed by creating and using platforms (dialects).
 ## How it work
 > **A platform (or dialect) in Mino** is a JSON (in the future it can be both XML and YAML) a file representing a dictionary, in which the key is the name of the replacement keyword or operator, and the value is a string (word or sign, or several characters ), which will denote this token in the program.  
-![platform-example](res/platform_example.png)
+![platform-example](res/platform_example.png)  
+*This is example of small platform*
 
 For example check two different programs and linked to two different platforms:
 ![platform-code1](res/platform_code1.png)
 ![platform-code2](res/platform_code2.png)  
 However, they will be compiled into the same tokens. So how does it work? On the left are simple platforms that resemble dictionaries. The key in them is the name of the token, and the value is the token that will be converted to this token. To demonstrate how this works, let's look at the third line of both platforms, which describes a token called *variable_keyword*, which is responsible for starting variable declaration(s). In the first case, we "told" the compiler that we will declare variables with the var keyword, and in the second - variable. Thus, during parsing, the parser, when it checks the token with the value that we set in the platform, will write the token that we set for this token.
-## Base Syntax (without platforms)
-This syntax duplicate in platform *std*
+## Base syntax (without platforms)
+This syntax duplicate in platform [std](https://github.com/mino-lang/Mino/blob/master/platforms/std.json)
+## Sample programs
+Always working sample you can watch in -> [program.mino](https://github.com/mino-lang/Mino/blob/master/program.mino).
+Also you can find working examples in -> [exmaples folder](https://github.com/mino-lang/Mino/tree/master/examples)
+### Programs for future *working* compiler of Mino
+**Hello World**
+```cs
+lib standart;
+println("Hello World");
+```
+**Loops**
+```cs
+lib standart;
+do {
+    print("Enter word 'hello': ");
+} while (input() != "hello");
+var a = 0.0;
+while ((a^10) > 100) {
+    println("Enter the number that equals 100 to the power of 10");
+    try {
+        a = input() to double;
+    } catch (NumberFormatException) {
+        println("You enter not number. Break loop");
+        break;
+    }
+}
+for (int i = 0; i < 200; i++) {
+    println(i);
+}
+/*
+for (counter i = 0; i < 100000000; i.inc() /*i++*/) {
+    println(i/1000); //counter is a special number type in TokensStandart library which optimize use of memory
+}
+*/
+var names = ["Alisa", "Alexander", "Maxim", "Anna", "Michael", "John"];
+foreach (string name in names) { // you can replace 'string' by 'var'
+    println("Hello $name");
+}
+```
