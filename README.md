@@ -28,12 +28,12 @@ Also you can find working examples in -> [examples folder](https://github.com/mi
 ### Programs for future *working* compiler of Mino
 **Hello World**
 ```cs
-lib standart;
+lib standard;
 println("Hello World");
 ```
 **Loops**
 ```cs
-lib standart;
+lib standard;
 do {
     print("Enter word 'hello': ");
 } while (input() != "hello");
@@ -41,7 +41,8 @@ var a = 0.0;
 while ((a^10) > 100) {
     println("Enter the number that equals 100 to the power of 10");
     try {
-        a = input() to double;
+        a = input() to double; // in the standard library, the ability to explicitly convert from string type to any numeric type
+        // without functions by the parseInt type has been created
     } catch (NumberFormatException) {
         println("You enter not number. Break loop");
         break;
@@ -52,7 +53,7 @@ for (int i = 0; i < 200; i++) {
 }
 /*
 for (counter i = 0; i < 100000000; i.inc() /*i++*/) {
-    println(i/1000); //counter is a special number type in TokensStandart library which optimize use of memory
+    println(i/1000); //counter is a special number type in TokensStandard library which optimize use of memory
 }
 */
 var names = ["Alisa", "Alexander", "Maxim", "Anna", "Michael", "John"];
@@ -63,10 +64,10 @@ foreach (string name in names) { // you can replace 'string' by 'var'
 
 **Very simple class**
 ```cs
-lib standart;
+lib standard;
 
 class MyClass {
-    final var name = "Alexander";
+    private final var name = "Alexander";
 
     fun printName() {
         println(name);
@@ -84,16 +85,16 @@ class MyClass {
 ```cs
 include UnityEngine.dll;
 
-//lib standart;
+//lib standard;
 
 use UnityEngine;
 
 class MyScript : MonoBehaviour {
-    void Start() {
-        Debug.Log("Game was started");
+    fun Start() {
+        Debug.Log("Script was started");
     }
 
-    void Update() {
+    fun Update() {
         Debug.Log("New frame");
     }
 }

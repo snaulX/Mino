@@ -1,7 +1,0 @@
-using System;
-Console.WriteLine(3);
-Console.WriteLine(3b);
-Console.WriteLine(3s);
-Console.WriteLine(3l);
-Console.WriteLine(3d);
-Console.WriteLine(3f);
