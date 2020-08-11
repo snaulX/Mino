@@ -1,0 +1,4 @@
+import dotnet;
+using System;
+namespace com.snaulX.Mino;
+Console.WriteLine("Hello Mino with tokens templates");
