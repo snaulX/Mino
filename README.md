@@ -4,7 +4,7 @@
  * [TokensBuilder.NET](https://github.com/mino-lang/TokensBuilder.NET) - compiler to CIL. Backend of Mino for .NET.
  **Now compiler works only on Windows (.NET Framework 4.5)**
 ## How to compile & run programs on Mino
-For compile&run programs on Mino, use *run.bat*. Open command line in this folder and type `run program`. You can see how *program.mino* was compiled and runned. You can see working program on Mino. If you wanna create own program on Mino:
+For compile&run programs on Mino, use *run.bat*. Open command line in this folder and type `run program1`. You can see how *program1.mino* was compiled and runned. You can see working program on Mino. If you wanna create own program on Mino:
  * Create text file in this folder with *.mino* extension
  * Write some code
  * Open cmd in this folder and write `run YourFileNameWithoutExtension` and if you make all right - you can see own working program on Mino
@@ -23,7 +23,7 @@ However, they will be compiled into the same tokens. So how does it work? On the
 ## Base syntax (without platforms)
 This syntax duplicate in platform [std](https://github.com/mino-lang/Mino/blob/master/platforms/std.json)
 ## Sample programs
-Always working sample you can watch in -> [program.mino](https://github.com/mino-lang/Mino/blob/master/program.mino).
+Always working sample you can watch in -> [program1.mino](https://github.com/mino-lang/Mino/blob/master/program.mino).
 Also you can find working examples in -> [examples folder](https://github.com/mino-lang/Mino/tree/master/examples)
 ### Programs for future *working* compiler of Mino
 **Hello World**

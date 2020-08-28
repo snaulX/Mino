@@ -4,9 +4,16 @@ namespace com.snaulX.Mino;
 Console.WriteLine("Hello Mino with tokens templates");
 Console.WriteLine("Hello {0}", "World");
 var Int32 a, b, c, d;
-a = Convert.ToInt32(Console.ReadLine()) + 1;
+a = (Convert.ToInt32(Console.ReadLine()) + 1);
 Console.WriteLine(Math.Pow(a, 3));
 Console.WriteLine(a > 1);
 var Random rnd;
 rnd = new Random();
-Console.WriteLine(rnd.Next(0, 100));
+b = rnd.Next(0, 100);
+Console.WriteLine(b);
+if (a == 6) 
+    Console.WriteLine("a equals 6");
+/*else if (b != 50)
+    Console.WriteLine("b not 50");
+else 
+    Console.WriteLine("a not equals 6 and b is 50. WHAT");*/
