@@ -5,4 +5,4 @@ Console.WriteLine("Hello Mino!"); //priniting value
 Console.WriteLine("Press any key to close program"); //i dont know but i must write anything here
 Console.ReadKey(); //readkey
 Math.Cos(34); //compiler can work with numbers
-class MyClass; //create empty public class with name com.snaulX.Mino.MyClass
+class MyClass; //create empty public class with name com.snaulX.Mino.MyClass b = rnd.Next(0, 100);

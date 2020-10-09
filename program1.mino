@@ -9,7 +9,7 @@ Console.WriteLine(Math.Pow(a, 3));
 Console.WriteLine(a > 1);
 var Random rnd;
 rnd = new Random();
-b = rnd.Next(0, 100);
+b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(b);
 if (a == 6) 
 	Console.WriteLine("a equals 6");
@@ -19,3 +19,5 @@ else if (a == 8)
 	Console.WriteLine("a greater then 8");
 else 
 	Console.WriteLine("a smaller then 6");
+while (b == 2)
+	Console.WriteLine(b);
