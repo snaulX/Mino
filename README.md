@@ -1,7 +1,7 @@
 # Mino
  Mino compiler. Need
- * [Tangara](https://github.com/mino-lang/Tangara) - official parser of Mino. Frontend of Mino.
- * [TokensBuilder.NET](https://github.com/mino-lang/TokensBuilder.NET) - compiler to CIL. Backend of Mino for .NET.
+ * [Tangara](https://github.com/snaulX/Tangara) - official parser of Mino. Frontend of Mino.
+ * [TokensBuilder.NET](https://github.com/snaulX/TokensBuilder.NET) - compiler to CIL. Backend of Mino for .NET.
  **Now compiler works only on Windows (.NET Framework 4.5)**
 ## How to compile & run programs on Mino
 For compile&run programs on Mino, use *run.bat*. Open command line in this folder and type `run program1`. You can see how *program1.mino* was compiled and runned. You can see working program on Mino. If you wanna create own program on Mino:
@@ -21,10 +21,10 @@ For example check two different programs and linked to two different platforms:
 ![platform-code2](res/platform_code2.png)  
 However, they will be compiled into the same tokens. So how does it work? On the left are simple platforms that resemble dictionaries. The key in them is the name of the token, and the value is the token that will be converted to this token. To demonstrate how this works, let's look at the third line of both platforms, which describes a token called *variable_keyword*, which is responsible for starting variable declaration(s). In the first case, we "told" the compiler that we will declare variables with the *var* keyword, and in the second - *variable*. Thus, during parsing, the parser, when it checks the token with the value that we set in the platform, will write the token that we set for this token.
 ## Base syntax (without platforms)
-This syntax duplicate in platform [std](https://github.com/mino-lang/Mino/blob/master/platforms/std.json)
+This syntax duplicate in platform [std](https://github.com/snaulXg/Mino/blob/master/platforms/std.json)
 ## Sample programs
-Always working sample you can watch in -> [program1.mino](https://github.com/mino-lang/Mino/blob/master/program.mino).
-Also you can find working examples in -> [examples folder](https://github.com/mino-lang/Mino/tree/master/examples)
+Always working sample you can watch in -> [program1.mino](https://github.com/snaulX/Mino/blob/master/program.mino).
+Also you can find working examples in -> [examples folder](https://github.com/snaulX/Mino/tree/master/examples)
 ### Programs for future *working* compiler of Mino
 **Hello World**
 ```cs
